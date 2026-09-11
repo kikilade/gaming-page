@@ -1,11 +1,14 @@
 <!doctype html>
 <html>
+
 <head>
+
 <meta charset="UTF-8">
 
 <title>The World of Gaming</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 
 <style>
 
@@ -15,7 +18,7 @@
 
     #page {
         width: 928px;
-        height: 1224px;
+        min-height: 1224px;
         background: white;
         margin: 0 auto;
         padding: 48px;
@@ -24,18 +27,18 @@
     }
 
     h1 {
-    font: 700 48pt/1.0em 'Orbitron', sans-serif;
-    text-align: center;
-    text-shadow: 2px 3px 6px mediumpurple;
-}
+        font: 700 48pt/1.0em 'Orbitron', sans-serif;
+        text-align: center;
+        text-shadow: 2px 3px 6px mediumpurple;
+    }
 
     h2 {
-        font: italic 14pt/2.4em Georgia, serif;
+        font: italic 14pt/2.4em 'Merriweather', serif;
         text-align: center;
     }
 
     p {
-        font: 14pt/1.4em Georgia, serif;
+        font: 14pt/1.4em 'Merriweather', serif;
     }
 
     img {
@@ -46,9 +49,23 @@
         box-shadow: 2px 3px 6px darkgray;
     }
 
+    .video-section {
+        clear: both;
+        padding-top: 30px;
+    }
+
+    video {
+        width: 720px;
+        margin: 0 auto;
+        display: block;
+        border: 1px solid dimgray;
+        box-shadow: 2px 3px 6px dimgray;
+    }
+
 </style>
 
 </head>
+
 
 <body>
 
@@ -58,7 +75,8 @@
 
     <h2>Gaming, Technology, and Creativity</h2>
 
-    <img src="gamer.png" alt="Gamer playing video games at a computer">
+    <img src="gamer.png"
+         alt="Gamer playing video games at a computer">
 
     <p>
         Gaming has become one of the most popular forms of entertainment
@@ -92,9 +110,27 @@
         people to play, create, and connect.
     </p>
 
+
+    <!-- Video Section -->
+
+    <div class="video-section">
+
+        <h2>Welcome to My Gaming Page</h2>
+
+        <video controls poster="gaming-poster.jpg">
+
+            <source src="gaming-video.mp4" type="video/mp4">
+
+            Your browser does not support the video tag.
+
+        </video>
+
+    </div>
+
 </div>
 
 </body>
+
 </html>
 
 </div>

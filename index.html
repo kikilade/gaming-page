@@ -49,6 +49,9 @@
         box-shadow: 2px 3px 6px darkgray;
     }
 
+
+    /* VIDEO */
+
     .video-section {
         clear: both;
         padding-top: 30px;
@@ -62,6 +65,40 @@
         box-shadow: 2px 3px 6px dimgray;
     }
 
+
+    /* TABLE */
+
+    .table-section {
+        clear: both;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    table {
+        width: 800px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        font: 12pt/1.4em 'Merriweather', serif;
+        box-shadow: 2px 3px 6px gray;
+    }
+
+    th, td {
+        border: 1px solid gray;
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background: white;
+        position: sticky;
+        top: 0;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    tr:nth-child(odd) {
+        background: whitesmoke;
+    }
+
 </style>
 
 </head>
@@ -71,12 +108,21 @@
 
 <div id="page">
 
+
+    <!-- TITLE -->
+
     <h1>The World of Gaming</h1>
 
     <h2>Gaming, Technology, and Creativity</h2>
 
+
+    <!-- IMAGE -->
+
     <img src="gamer.png"
          alt="Gamer playing video games at a computer">
+
+
+    <!-- TEXT -->
 
     <p>
         Gaming has become one of the most popular forms of entertainment
@@ -111,7 +157,7 @@
     </p>
 
 
-    <!-- Video Section -->
+    <!-- VIDEO SECTION -->
 
     <div class="video-section">
 
@@ -127,13 +173,64 @@
 
     </div>
 
+
+    <!-- TABLE SECTION -->
+
+    <div class="table-section">
+
+        <h2>Popular Video Games</h2>
+
+        <table>
+
+            <tr>
+                <th>Game</th>
+                <th>Genre</th>
+                <th>Developer</th>
+                <th>Release Year</th>
+            </tr>
+
+            <tr>
+                <td>Minecraft</td>
+                <td>Sandbox</td>
+                <td>Mojang Studios</td>
+                <td>2011</td>
+            </tr>
+
+            <tr>
+                <td>Fortnite</td>
+                <td>Battle Royale</td>
+                <td>Epic Games</td>
+                <td>2017</td>
+            </tr>
+
+            <tr>
+                <td>Grand Theft Auto V</td>
+                <td>Action-Adventure</td>
+                <td>Rockstar North</td>
+                <td>2013</td>
+            </tr>
+
+            <tr>
+                <td>Overwatch</td>
+                <td>Hero Shooter</td>
+                <td>Blizzard Entertainment</td>
+                <td>2016</td>
+            </tr>
+
+            <tr>
+                <td>Pokémon GO</td>
+                <td>Augmented Reality</td>
+                <td>Niantic</td>
+                <td>2016</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
 </div>
 
 </body>
 
-</html>
-
-</div>
-
-</body>
 </html>

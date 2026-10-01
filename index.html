@@ -41,7 +41,31 @@
         font: 14pt/1.4em 'Merriweather', serif;
     }
 
-    img {
+
+    /* PORTFOLIO BUTTON */
+
+    .portfolio-button {
+        display: block;
+        width: 200px;
+        margin: 20px auto 35px auto;
+        padding: 14px 20px;
+        background: black;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font: 700 14pt 'Orbitron', sans-serif;
+        border-radius: 6px;
+        box-shadow: 2px 3px 6px gray;
+    }
+
+    .portfolio-button:hover {
+        background: mediumpurple;
+    }
+
+
+    /* GAMER IMAGE */
+
+    .gamer-image {
         width: 425px;
         float: left;
         margin: 6px 24px 24px 0;
@@ -116,13 +140,21 @@
     <h2>Gaming, Technology, and Creativity</h2>
 
 
-    <!-- IMAGE -->
+    <!-- PORTFOLIO BUTTON -->
 
-    <img src="gamer.png"
+    <a class="portfolio-button" href="portfolio.html">
+        View My Portfolio
+    </a>
+
+
+    <!-- GAMER IMAGE -->
+
+    <img class="gamer-image"
+         src="gamer.png"
          alt="Gamer playing video games at a computer">
 
 
-    <!-- TEXT -->
+    <!-- GAMING TEXT -->
 
     <p>
         Gaming has become one of the most popular forms of entertainment

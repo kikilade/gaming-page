@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>My Graphic Design Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+    body {
+        background: whitesmoke;
+    }
+
+    #page {
+        width: 928px;
+        min-height: 900px;
+        background: white;
+        margin: 0 auto;
+        padding: 48px;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    }
+
+    h1 {
+        font: 700 40pt/1.2em 'Orbitron', sans-serif;
+        text-align: center;
+        text-shadow: 2px 3px 6px mediumpurple;
+    }
+
+    h2 {
+        font: 14pt/1.4em 'Merriweather', serif;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+
+    /* FLEXBOX PORTFOLIO */
+
+    #portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+
+    /* PORTFOLIO PIECES */
+
+    figure {
+        width: 250px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    figure img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        border: 1px solid dimgray;
+        box-shadow: 2px 3px 6px darkgray;
+    }
+
+    figcaption {
+        font: 12pt/1.4em 'Merriweather', serif;
+        margin-top: 12px;
+    }
+
+    figcaption strong {
+        font-family: 'Orbitron', sans-serif;
+    }
+
+</style>
+
+</head>
+
+
+<body>
+
+<div id="page">
+
+    <h1>My Design Portfolio</h1>
+
+    <h2>A collection of my graphic design work</h2>
+
+
+    <div id="portfolio">
+
+
+        <!-- GEOMETRIC DESIGN -->
+
+        <figure>
+
+            <a href="geometric-design.jpg">
+
+                <img src="geometric-thumb.jpg"
+                     alt="Colorful geometric character design">
+
+            </a>
+
+            <figcaption>
+                <strong>Geometric Design</strong><br>
+                Digital geometric illustration
+            </figcaption>
+
+        </figure>
+
+
+        <!-- ITACHI POSTER -->
+
+        <figure>
+
+            <a href="itachi-poster.jpg">
+
+                <img src="itachi-thumb.jpg"
+                     alt="Red and black Itachi inspired poster">
+
+            </a>
+
+            <figcaption>
+                <strong>Itachi Poster</strong><br>
+                Digital poster design
+            </figcaption>
+
+        </figure>
+
+
+        <!-- LOGO DESIGN -->
+
+        <figure>
+
+            <a href="logo-design.png">
+
+                <img src="logo-thumb.png"
+                     alt="Black and white symmetrical logo design">
+
+            </a>
+
+            <figcaption>
+                <strong>Logo Design</strong><br>
+                Black and white logo exploration
+            </figcaption>
+
+        </figure>
+
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

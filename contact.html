@@ -1,0 +1,309 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Me - The World of Gaming</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: whitesmoke;
+    margin: 0;
+    padding: 20px;
+}
+
+#page {
+    width: 100%;
+    max-width: 1024px;
+    background: white;
+    margin: 0 auto;
+    padding: 48px;
+    border: 1px solid darkgray;
+    box-shadow: 2px 3px 6px darkgray;
+}
+
+h1 {
+    font: 700 38pt 'Orbitron', sans-serif;
+    text-align: center;
+    text-shadow: 2px 3px 6px mediumpurple;
+}
+
+h2 {
+    font: 14pt 'Merriweather', serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.home-button {
+    display: block;
+    width: 200px;
+    margin: 0 auto 35px;
+    padding: 14px;
+    background: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font: 700 12pt 'Orbitron', sans-serif;
+    border-radius: 6px;
+}
+
+.home-button:hover {
+    background: mediumpurple;
+}
+
+/* CONTACT FORM */
+
+form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #f4f0ff;
+    border: 1px solid dimgray;
+    border-radius: 8px;
+    box-shadow: 2px 3px 6px darkgray;
+    font-family: 'Merriweather', serif;
+}
+
+fieldset {
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin-bottom: 22px;
+    padding: 20px;
+}
+
+legend {
+    font: 700 13pt 'Orbitron', sans-serif;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font: 12pt 'Merriweather', serif;
+    background: white;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 12px 0;
+}
+
+.choice label {
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: rebeccapurple;
+    width: 17px;
+    height: 17px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 5px;
+    font: 700 11pt 'Orbitron', sans-serif;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background: rebeccapurple;
+    color: white;
+}
+
+input[type="reset"] {
+    background: lightgray;
+    color: black;
+}
+
+input[type="submit"]:hover {
+    background: indigo;
+}
+
+@media (max-width: 600px) {
+    #page {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25pt;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="page">
+
+    <h1>Contact Me</h1>
+
+    <h2>Have a question about gaming? Send me a message!</h2>
+
+    <a class="home-button" href="index.html">
+        Back to Home
+    </a>
+
+    <form action="#" method="get"
+          onsubmit="event.preventDefault(); alert('Demo form only. Your message was not sent.');">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject"
+                       placeholder="What is your message about?" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Reason for Contact</legend>
+
+            <div class="choice">
+                <input type="radio" id="question"
+                       name="reason" value="Question" required>
+                <label for="question">General Question</label>
+            </div>
+
+            <div class="choice">
+                <input type="radio" id="feedback"
+                       name="reason" value="Feedback">
+                <label for="feedback">Website Feedback</label>
+            </div>
+
+            <div class="choice">
+                <input type="radio" id="collaboration"
+                       name="reason" value="Collaboration">
+                <label for="collaboration">Collaboration</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gaming Interests</legend>
+
+            <p>Select any gaming categories you enjoy:</p>
+
+            <div class="choice">
+                <input type="checkbox" id="pc"
+                       name="interests" value="PC Gaming">
+                <label for="pc">PC Gaming</label>
+            </div>
+
+            <div class="choice">
+                <input type="checkbox" id="console"
+                       name="interests" value="Console Gaming">
+                <label for="console">Console Gaming</label>
+            </div>
+
+            <div class="choice">
+                <input type="checkbox" id="mobile"
+                       name="interests" value="Mobile Gaming">
+                <label for="mobile">Mobile Gaming</label>
+            </div>
+
+            <div class="choice">
+                <input type="checkbox" id="retro"
+                       name="interests" value="Retro Gaming">
+                <label for="retro">Retro Gaming</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Message Details</legend>
+
+            <div class="form-group">
+                <label for="platform">Favorite Gaming Platform:</label>
+
+                <select id="platform" name="platform">
+                    <option value="">Choose a platform</option>
+                    <option value="PC">PC</option>
+                    <option value="PlayStation">PlayStation</option>
+                    <option value="Xbox">Xbox</option>
+                    <option value="Nintendo">Nintendo</option>
+                    <option value="Mobile">Mobile</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Comments or Questions:</label>
+
+                <textarea id="message" name="message"
+                          placeholder="Type your message here..."
+                          required></textarea>
+            </div>
+        </fieldset>
+
+        <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear Form">
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Gaming Photo Grid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    background: whitesmoke;
+}
+
+#page {
+    width: 928px;
+    min-height: 1000px;
+    background: white;
+    margin: 0 auto;
+    padding: 48px;
+    border: 1px solid darkgray;
+    box-shadow: 2px 3px 6px darkgray;
+}
+
+h1 {
+    font: 700 40pt 'Orbitron', sans-serif;
+    text-align: center;
+    text-shadow: 2px 3px 6px mediumpurple;
+}
+
+h2 {
+    font: 14pt 'Merriweather', serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.home-button {
+    display: block;
+    width: 200px;
+    margin: 0 auto 40px;
+    padding: 14px 20px;
+    background: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font: 700 14pt 'Orbitron', sans-serif;
+    border-radius: 6px;
+}
+
+.home-button:hover {
+    background: mediumpurple;
+}
+
+/* CSS GRID LAYOUT */
+
+#gallery {
+    display: grid;
+    grid-template: auto auto / 384px 384px;
+    gap: 25px;
+    justify-content: center;
+    align-items: start;
+}
+
+#gallery img {
+    width: 384px;
+    height: auto;
+    display: block;
+    border: 1px solid dimgray;
+    box-sizing: border-box;
+    box-shadow: 2px 3px 6px darkgray;
+}
+
+/* FIRST LANDSCAPE IMAGE */
+
+#gallery img:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+/* SECOND LANDSCAPE IMAGE */
+
+#gallery img:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+/* THIRD PORTRAIT IMAGE */
+
+#gallery img:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="page">
+
+    <h1>Gaming Photo Grid</h1>
+
+    <h2>A collection of gaming photography using CSS Grid</h2>
+
+    <a class="home-button" href="index.html">
+        Back to Home
+    </a>
+
+    <div id="gallery">
+
+        <img
+          src="jose-gil-2pNdTBn4C7U-unsplash.jpg"
+          alt="Gaming controller with red and blue lighting">
+
+        <img
+          src="glenn-carstens-peters-0woyPEJQ7jc-unsplash.jpg"
+          alt="Person playing video games in front of a television">
+
+        <img
+          src="luis-villasmil-ITFwHdPEED0-unsplash.jpg"
+          alt="PlayStation controller under pink and purple lighting">
+
+    </div>
+
+</div>
+
+</body>
+</html>

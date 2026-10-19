@@ -1,0 +1,340 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Beyond the Screen - Type Sample</title>
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    background: #0b0914;
+    color: white;
+}
+
+/* MAIN PAGE */
+
+#page {
+    max-width: 1024px;
+    margin: 0 auto;
+    background: #141020;
+    border: 1px solid #473568;
+    box-shadow: 0 0 30px rgba(145, 75, 255, 0.25);
+}
+
+/* NAVIGATION */
+
+nav {
+    padding: 25px 40px;
+    border-bottom: 1px solid #473568;
+}
+
+nav a {
+    color: white;
+    font: 700 14px 'Orbitron', sans-serif;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c084fc;
+}
+
+/* HERO IMAGE AND TITLE */
+
+.hero {
+    min-height: 500px;
+    padding: 70px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(10, 5, 25, 0.94),
+            rgba(10, 5, 25, 0.30)
+        ),
+        url("gaming-type.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.eyebrow {
+    font: 700 18px 'Rajdhani', sans-serif;
+    letter-spacing: 5px;
+    color: #d8b4fe;
+    text-transform: uppercase;
+}
+
+h1 {
+    font: 900 clamp(42px, 7vw, 76px)/1.1 'Orbitron', sans-serif;
+    letter-spacing: -2px;
+    margin: 20px 0;
+    max-width: 800px;
+
+    text-shadow: 0 0 20px rgba(173, 80, 255, 0.65);
+}
+
+.hero-subtitle {
+    font: 500 27px 'Rajdhani', sans-serif;
+    color: #e9d5ff;
+    letter-spacing: 2px;
+}
+
+/* MAIN CONTENT */
+
+.content {
+    padding: 65px 75px;
+}
+
+.section-label {
+    font: 700 16px 'Rajdhani', sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #c084fc;
+}
+
+h2 {
+    font: 700 34px 'Rajdhani', sans-serif;
+    margin: 15px 0 25px;
+}
+
+p {
+    font: 16px/2 'Merriweather', serif;
+    color: #e5dff0;
+    margin-bottom: 25px;
+}
+
+/* DROP CAP */
+
+.dropcap::first-letter {
+    float: left;
+    font: 900 72px/0.85 'Orbitron', sans-serif;
+    color: #c084fc;
+    padding-right: 12px;
+    padding-top: 7px;
+}
+
+/* PULL QUOTE */
+
+blockquote {
+    margin: 55px 0;
+    padding: 25px 35px;
+    border-left: 5px solid #a855f7;
+    background: #241735;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
+
+    font: 700 32px/1.4 'Rajdhani', sans-serif;
+    color: white;
+}
+
+blockquote span {
+    color: #c084fc;
+}
+
+/* TYPOGRAPHY SHOWCASE */
+
+.type-showcase {
+    margin-top: 55px;
+    padding-top: 30px;
+    border-top: 1px solid #473568;
+}
+
+.font-sample {
+    margin: 30px 0;
+}
+
+.font-name {
+    font: 700 14px 'Rajdhani', sans-serif;
+    letter-spacing: 3px;
+    color: #c084fc;
+    margin-bottom: 10px;
+}
+
+.orbitron-sample {
+    font: 700 34px 'Orbitron', sans-serif;
+}
+
+.rajdhani-sample {
+    font: 700 36px 'Rajdhani', sans-serif;
+}
+
+.merriweather-sample {
+    font: 20px 'Merriweather', serif;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #473568;
+    color: #b9a8ce;
+    font: 16px 'Rajdhani', sans-serif;
+}
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 420px;
+        padding: 45px 25px;
+    }
+
+    .content {
+        padding: 40px 25px;
+    }
+
+    blockquote {
+        font-size: 25px;
+    }
+
+    .orbitron-sample {
+        font-size: 24px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="page">
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="index.html">&larr; BACK TO HOME</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <header class="hero">
+
+        <div class="eyebrow">
+            A Digital Experience
+        </div>
+
+        <h1>BEYOND<br>THE SCREEN</h1>
+
+        <div class="hero-subtitle">
+            Where Imagination Meets Technology
+        </div>
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="content">
+
+        <div class="section-label">
+            01 / The Digital World
+        </div>
+
+        <h2>More Than Just a Game</h2>
+
+        <p class="dropcap">
+            Gaming has become much more than a way to pass the
+            time. It allows people to explore different worlds,
+            experience unique stories, and connect with others
+            through technology. From the detailed environments
+            of open-world games to the excitement of competitive
+            multiplayer matches, every experience offers
+            something different. What makes gaming interesting
+            is how it brings together art, sound, design, and
+            interaction into one creative experience.
+        </p>
+
+        <!-- PULL QUOTE -->
+
+        <blockquote>
+            &ldquo;Every game is a new world waiting
+            to be <span>explored.</span>&rdquo;
+        </blockquote>
+
+        <div class="section-label">
+            02 / Creativity and Connection
+        </div>
+
+        <h2>The Future of Play</h2>
+
+        <p>
+            As gaming technology continues to improve, the
+            possibilities for creativity continue to grow.
+            Games are no longer limited to simply completing
+            levels or earning points. Players can build their
+            own environments, share their creations, and
+            become part of communities around the world.
+            Whether someone plays casually or competitively,
+            gaming provides a space where imagination and
+            technology come together in meaningful ways.
+        </p>
+
+        <!-- FONT SHOWCASE -->
+
+        <section class="type-showcase">
+
+            <div class="section-label">
+                03 / Typography
+            </div>
+
+            <h2>The Fonts Behind the Design</h2>
+
+            <div class="font-sample">
+                <div class="font-name">
+                    ORBITRON / DISPLAY TYPEFACE
+                </div>
+
+                <div class="orbitron-sample">
+                    LEVEL UP YOUR WORLD
+                </div>
+            </div>
+
+            <div class="font-sample">
+                <div class="font-name">
+                    RAJDHANI / HEADINGS
+                </div>
+
+                <div class="rajdhani-sample">
+                    Designed for the Digital Age
+                </div>
+            </div>
+
+            <div class="font-sample">
+                <div class="font-name">
+                    MERRIWEATHER / BODY TEXT
+                </div>
+
+                <div class="merriweather-sample">
+                    Creativity begins with imagination.
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        Beyond the Screen &mdash; Typography Design Project
+        &copy; 2026
+    </footer>
+
+</div>
+
+</body>
+</html>

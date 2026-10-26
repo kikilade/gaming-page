@@ -2,145 +2,268 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>The World of Gaming</title>
 
-<!-- Google Fonts -->
+<!-- GOOGLE FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 
 <style>
 
+/* GENERAL PAGE STYLES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: whitesmoke;
+    margin: 0;
+    padding: 20px;
+}
+
+#page {
+    width: 100%;
+    max-width: 1024px;
+    min-height: 1224px;
+    background: white;
+    margin: 0 auto;
+    padding: 48px;
+    border: 1px solid darkgray;
+    box-shadow: 2px 3px 6px darkgray;
+}
+
+/* HEADINGS AND PARAGRAPHS */
+
+h1 {
+    font: 700 48pt/1.1 'Orbitron', sans-serif;
+    text-align: center;
+    text-shadow: 2px 3px 6px mediumpurple;
+    overflow-wrap: anywhere;
+}
+
+h2 {
+    font: italic 14pt/1.6 'Merriweather', serif;
+    text-align: center;
+    margin: 25px 0;
+}
+
+p {
+    font: 14pt/1.6 'Merriweather', serif;
+}
+
+/* NAVIGATION BUTTONS */
+
+.navigation {
+    text-align: center;
+    margin: 20px auto 35px;
+}
+
+.nav-button {
+    display: inline-block;
+    margin: 5px;
+    padding: 14px 20px;
+    background: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font: 700 12pt/1.4 'Orbitron', sans-serif;
+    border-radius: 6px;
+    box-shadow: 2px 3px 6px gray;
+}
+
+.nav-button:hover {
+    background: mediumpurple;
+}
+
+/* GAMER IMAGE */
+
+.gamer-image {
+    width: 425px;
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin: 6px 24px 24px 0;
+    border: 1px solid dimgray;
+    box-shadow: 2px 3px 6px darkgray;
+}
+
+/* VIDEO */
+
+.video-section {
+    clear: both;
+    padding-top: 30px;
+}
+
+video {
+    width: 720px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid dimgray;
+    box-shadow: 2px 3px 6px dimgray;
+}
+
+/* TABLE */
+
+.table-section {
+    clear: both;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font: 12pt/1.4 'Merriweather', serif;
+    box-shadow: 2px 3px 6px gray;
+}
+
+th, td {
+    border: 1px solid gray;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+tr:nth-child(odd) {
+    background: whitesmoke;
+}
+
+/* RESPONSIVE DESIGN FOR TABLETS AND PHONES */
+
+@media (max-width: 750px) {
+
     body {
-        background: whitesmoke;
+        padding: 10px;
     }
 
     #page {
-        width: 928px;
-        min-height: 1224px;
-        background: white;
-        margin: 0 auto;
-        padding: 48px;
-        border: 1px solid darkgray;
-        box-shadow: 2px 3px 6px darkgray;
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        padding: 20px;
     }
 
     h1 {
-        font: 700 48pt/1.0em 'Orbitron', sans-serif;
+        font-size: 28pt;
+        line-height: 1.3;
         text-align: center;
-        text-shadow: 2px 3px 6px mediumpurple;
     }
 
     h2 {
-        font: italic 14pt/2.4em 'Merriweather', serif;
-        text-align: center;
+        font-size: 17pt;
+        line-height: 1.6;
     }
 
     p {
-        font: 14pt/1.4em 'Merriweather', serif;
+        font-size: 16pt;
+        line-height: 1.8;
     }
 
-
-    /* NAVIGATION BUTTONS */
+    /* STACK NAVIGATION BUTTONS */
 
     .navigation {
-        text-align: center;
-        margin: 20px auto 35px auto;
+        width: 100%;
+        margin: 20px auto 30px;
     }
 
     .nav-button {
-        display: inline-block;
-        margin: 5px;
-        padding: 14px 20px;
-        background: black;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        font: 700 13pt 'Orbitron', sans-serif;
-        border-radius: 6px;
-        box-shadow: 2px 3px 6px gray;
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 16px 12px;
+        font-size: 12pt;
     }
 
-    .nav-button:hover {
-        background: mediumpurple;
-    }
-
-
-    /* GAMER IMAGE */
+    /* FULL-WIDTH GAMING IMAGE */
 
     .gamer-image {
-        width: 425px;
-        float: left;
-        margin: 6px 24px 24px 0;
-        border: 1px solid dimgray;
-        box-shadow: 2px 3px 6px darkgray;
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto;
     }
 
-
-    /* VIDEO */
+    /* RESPONSIVE VIDEO */
 
     .video-section {
-        clear: both;
-        padding-top: 30px;
+        padding-top: 20px;
     }
 
     video {
-        width: 720px;
-        margin: 0 auto;
-        display: block;
-        border: 1px solid dimgray;
-        box-shadow: 2px 3px 6px dimgray;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 
-
-    /* TABLE */
+    /* SCROLLABLE TABLE */
 
     .table-section {
-        clear: both;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 30px;
     }
 
     table {
         width: 800px;
-        margin: 0 auto;
-        border-collapse: collapse;
-        font: 12pt/1.4em 'Merriweather', serif;
-        box-shadow: 2px 3px 6px gray;
+        max-width: none;
+        font-size: 11pt;
     }
 
     th, td {
-        border: 1px solid gray;
-        padding: 12px;
-        text-align: left;
+        padding: 10px;
     }
 
-    th {
-        background: white;
-        font-family: 'Orbitron', sans-serif;
+}
+
+/* EXTRA SMALL PHONES */
+
+@media (max-width: 400px) {
+
+    h1 {
+        font-size: 23pt;
     }
 
-    tr:nth-child(odd) {
-        background: whitesmoke;
+    p {
+        font-size: 15pt;
+        line-height: 1.8;
     }
+
+    .nav-button {
+        font-size: 10pt;
+    }
+
+}
 
 </style>
 
 </head>
 
-
 <body>
 
 <div id="page">
 
-
-    <!-- TITLE -->
+    <!-- WEBSITE TITLE -->
 
     <h1>The World of Gaming</h1>
 
     <h2>Gaming, Technology, and Creativity</h2>
-
 
     <!-- NAVIGATION BUTTONS -->
 
@@ -157,55 +280,57 @@
         <a class="nav-button" href="contact.html">
             Contact Me
         </a>
-		
-		<a class="nav-button" href="type.html">
-        Type Sample
-		</a>
+
+        <a class="nav-button" href="type.html">
+            Type Sample
+        </a>
 
     </div>
 
+    <!-- GAMING IMAGE -->
 
-    <!-- GAMER IMAGE -->
-
-    <img class="gamer-image"
-         src="gamer.png"
-         alt="Gamer playing video games at a computer">
-
+    <img
+        class="gamer-image"
+        src="gamer.png"
+        alt="Gamer playing video games at a computer">
 
     <!-- GAMING PARAGRAPHS -->
 
     <p>
-        Gaming has become one of the most popular forms of entertainment
-        around the world. People can play games on computers, consoles,
-        phones, and many other devices. What started as simple arcade games
-        has grown into a massive industry with realistic graphics, detailed
+        Gaming has become one of the most popular forms of
+        entertainment around the world. People can play games
+        on computers, consoles, phones, and many other devices.
+        What started as simple arcade games has grown into a
+        massive industry with realistic graphics, detailed
         stories, competitive tournaments, and online communities.
     </p>
 
     <p>
-        One of the things that makes gaming interesting is the variety of
-        experiences it can provide. Some games allow players to explore huge
-        open worlds, while others focus on competition, creativity, strategy,
-        or storytelling. Games can also give players the freedom to build
-        and create their own environments.
+        One of the things that makes gaming interesting is the
+        variety of experiences it can provide. Some games allow
+        players to explore huge open worlds, while others focus
+        on competition, creativity, strategy, or storytelling.
+        Games can also give players the freedom to build and
+        create their own environments.
     </p>
 
     <p>
-        Gaming can also be a social experience. Online multiplayer games
-        allow friends and strangers to communicate and work together even
-        when they live far apart. Streaming platforms and gaming communities
-        have made it possible for people to share their experiences, watch
-        other players, and connect through games they enjoy.
+        Gaming can also be a social experience. Online multiplayer
+        games allow friends and strangers to communicate and work
+        together even when they live far apart. Streaming platforms
+        and gaming communities have made it possible for people to
+        share their experiences, watch other players, and connect
+        through games they enjoy.
     </p>
 
     <p>
-        For me, gaming is a way to relax, have fun, and experience different
-        creative worlds. I especially enjoy how games combine visual design,
-        music, technology, and interaction. As technology continues to
-        improve, gaming will continue to change and create new ways for
-        people to play, create, and connect.
+        For me, gaming is a way to relax, have fun, and experience
+        different creative worlds. I especially enjoy how games
+        combine visual design, music, technology, and interaction.
+        As technology continues to improve, gaming will continue
+        to change and create new ways for people to play, create,
+        and connect.
     </p>
-
 
     <!-- VIDEO SECTION -->
 
@@ -215,7 +340,9 @@
 
         <video controls poster="gaming-poster.jpg">
 
-            <source src="gaming-video.mp4" type="video/mp4">
+            <source
+                src="gaming-video.mp4"
+                type="video/mp4">
 
             Your browser does not support the video tag.
 
@@ -223,64 +350,71 @@
 
     </div>
 
-
     <!-- TABLE SECTION -->
 
     <div class="table-section">
 
         <h2>Popular Video Games</h2>
 
-        <table>
+        <div class="table-container">
 
-            <tr>
-                <th>Game</th>
-                <th>Genre</th>
-                <th>Developer</th>
-                <th>Release Year</th>
-            </tr>
+            <table>
 
-            <tr>
-                <td>Minecraft</td>
-                <td>Sandbox</td>
-                <td>Mojang Studios</td>
-                <td>2011</td>
-            </tr>
+                <thead>
+                    <tr>
+                        <th>Game</th>
+                        <th>Genre</th>
+                        <th>Developer</th>
+                        <th>Release Year</th>
+                    </tr>
+                </thead>
 
-            <tr>
-                <td>Fortnite</td>
-                <td>Battle Royale</td>
-                <td>Epic Games</td>
-                <td>2017</td>
-            </tr>
+                <tbody>
 
-            <tr>
-                <td>Grand Theft Auto V</td>
-                <td>Action-Adventure</td>
-                <td>Rockstar North</td>
-                <td>2013</td>
-            </tr>
+                    <tr>
+                        <td>Minecraft</td>
+                        <td>Sandbox</td>
+                        <td>Mojang Studios</td>
+                        <td>2011</td>
+                    </tr>
 
-            <tr>
-                <td>Overwatch</td>
-                <td>Hero Shooter</td>
-                <td>Blizzard Entertainment</td>
-                <td>2016</td>
-            </tr>
+                    <tr>
+                        <td>Fortnite</td>
+                        <td>Battle Royale</td>
+                        <td>Epic Games</td>
+                        <td>2017</td>
+                    </tr>
 
-            <tr>
-                <td>Pokémon GO</td>
-                <td>Augmented Reality</td>
-                <td>Niantic</td>
-                <td>2016</td>
-            </tr>
+                    <tr>
+                        <td>Grand Theft Auto V</td>
+                        <td>Action-Adventure</td>
+                        <td>Rockstar North</td>
+                        <td>2013</td>
+                    </tr>
 
-        </table>
+                    <tr>
+                        <td>Overwatch</td>
+                        <td>Hero Shooter</td>
+                        <td>Blizzard Entertainment</td>
+                        <td>2016</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pokémon GO</td>
+                        <td>Augmented Reality</td>
+                        <td>Niantic</td>
+                        <td>2016</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
 
     </div>
-
 
 </div>
 
 </body>
-
 </html>

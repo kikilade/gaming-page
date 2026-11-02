@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Space Adventure - CSS Animation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    background: #0b0916;
+    color: white;
+}
+
+/* MAIN PAGE */
+
+#page {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #171127;
+    border: 1px solid #60417f;
+    box-shadow: 0 0 24px rgba(160, 93, 255, 0.3);
+}
+
+h1 {
+    margin: 0 0 16px;
+    font: 900 clamp(28px, 5vw, 48px)/1.2 'Orbitron', sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 14px mediumpurple;
+}
+
+.intro {
+    font: 16px/1.7 'Merriweather', serif;
+    text-align: center;
+    color: #e9dafa;
+    margin: 0 auto 24px;
+    max-width: 750px;
+}
+
+/* BACK BUTTON */
+
+.home-button {
+    display: table;
+    margin: 0 auto 30px;
+    padding: 12px 20px;
+    color: white;
+    background: #58318b;
+    border-radius: 6px;
+    text-decoration: none;
+    font: 700 13px 'Orbitron', sans-serif;
+}
+
+.home-button:hover {
+    background: #8354c5;
+}
+
+/* SPACE BACKGROUND */
+
+.space-scene {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+
+    border: 2px solid #6d4c98;
+    border-radius: 12px;
+
+    background:
+        radial-gradient(circle at 12% 20%, white 1px, transparent 2px),
+        radial-gradient(circle at 70% 65%, white 1px, transparent 2px),
+        radial-gradient(circle at 42% 38%, #dcb8ff 1px, transparent 2px),
+        radial-gradient(circle at 88% 16%, white 1px, transparent 2px),
+        radial-gradient(ellipse at 50% 100%, #35195a 0%, #120e2c 60%, #050713 100%);
+
+    background-size:
+        170px 130px,
+        220px 180px,
+        250px 170px,
+        190px 150px,
+        cover;
+}
+
+/* DECORATIVE PLANET */
+
+.space-scene::after {
+    content: "";
+    position: absolute;
+    bottom: -90px;
+    right: -65px;
+
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle at 35% 30%,
+        #b67ee3,
+        #533779 55%,
+        #201638 78%
+    );
+
+    box-shadow: 0 0 45px rgba(165, 96, 248, 0.3);
+}
+
+/* SPACESHIP PNG */
+
+.spaceship {
+    position: absolute;
+    z-index: 1;
+
+    left: -240px;
+    top: 45%;
+
+    width: 220px;
+    max-width: none;
+    height: auto;
+
+    animation: flyAcross 12s linear infinite;
+}
+
+/* ASSIGNMENT 10 - KEYFRAMES ANIMATION */
+
+@keyframes flyAcross {
+
+    0% {
+        left: -240px;
+        top: 50%;
+    }
+
+    50% {
+        top: 38%;
+    }
+
+    100% {
+        left: 100%;
+        top: 50%;
+    }
+
+}
+
+/* DESCRIPTION */
+
+.description {
+    padding-top: 22px;
+    font: 15px/1.7 'Merriweather', serif;
+    text-align: center;
+    color: #d7c6ed;
+}
+
+.description code {
+    color: #edc2ff;
+}
+
+/* MOBILE RESPONSIVE STYLES */
+
+@media (max-width: 750px) {
+
+    body {
+        padding: 10px;
+    }
+
+    #page {
+        padding: 24px 16px;
+    }
+
+    .space-scene {
+        height: 260px;
+    }
+
+    .spaceship {
+        width: 160px;
+    }
+
+    @keyframes flyAcross {
+
+        0% {
+            left: -180px;
+            top: 50%;
+        }
+
+        50% {
+            top: 38%;
+        }
+
+        100% {
+            left: 100%;
+            top: 50%;
+        }
+
+    }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .spaceship {
+        animation: none;
+        left: 12%;
+        top: 45%;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="page">
+
+    <h1>SPACE ADVENTURE</h1>
+
+    <p class="intro">
+        A spaceship travels across a galaxy in this
+        gaming-inspired CSS animation.
+    </p>
+
+    <a class="home-button" href="index.html">
+        Back to Home
+    </a>
+
+    <!-- ANIMATED SPACE SCENE -->
+
+    <div class="space-scene"
+         aria-label="Animated spaceship flying across a starry sky">
+
+        <img
+            class="spaceship"
+            src="spaceship.png"
+            alt="Purple and blue spaceship flying to the right">
+
+    </div>
+
+    <p class="description">
+        The spaceship is a transparent PNG animated with
+        CSS <code>@keyframes</code> and <code>animation</code>.
+    </p>
+
+</div>
+
+</body>
+</html>

@@ -8,6 +8,7 @@
 
 <title>The World of Gaming</title>
 
+<!-- GOOGLE FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 
 <style>
@@ -30,6 +31,8 @@ body {
     min-height: 1224px;
 
     background: white;
+    color: black;
+
     margin: 0 auto;
     padding: 48px;
 
@@ -70,20 +73,141 @@ p {
 
     background: black;
     color: white;
+
     text-align: center;
     text-decoration: none;
 
     font: 700 12pt/1.4 'Orbitron', sans-serif;
+
     border-radius: 6px;
     box-shadow: 2px 3px 6px gray;
 }
 
-.nav-button:hover,
-.nav-button:focus-visible {
+.nav-button:hover {
     background: mediumpurple;
 }
 
-/* GAMING IMAGE */
+/* ASSIGNMENT 12 - JAVASCRIPT BUTTONS */
+
+.reading-options {
+    background: #f4efff;
+    border: 1px solid mediumpurple;
+    border-radius: 8px;
+
+    text-align: center;
+    padding: 20px;
+    margin: 25px auto 35px;
+
+    box-shadow: 2px 3px 6px lightgray;
+}
+
+.reading-options h2 {
+    margin: 5px 0 15px;
+    font: 700 16pt 'Orbitron', sans-serif;
+}
+
+.reading-options p {
+    font-size: 12pt;
+    margin: 10px 0;
+}
+
+.js-button {
+    display: inline-block;
+
+    background: rebeccapurple;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 12px 18px;
+    margin: 6px;
+
+    font: 700 11pt 'Orbitron', sans-serif;
+
+    cursor: pointer;
+}
+
+.js-button:hover {
+    background: mediumpurple;
+}
+
+.js-button:focus-visible,
+.nav-button:focus-visible {
+    outline: 3px solid #d977ff;
+    outline-offset: 3px;
+}
+
+/* LARGER TEXT MODE */
+
+#page.large-text p {
+    font-size: 23px;
+    line-height: 1.9;
+}
+
+#page.large-text h2 {
+    font-size: 23px;
+    line-height: 1.6;
+}
+
+#page.large-text table {
+    font-size: 18px;
+}
+
+/* HIGH CONTRAST MODE */
+
+#page.high-contrast {
+    background: #101010;
+    color: white;
+    border-color: white;
+}
+
+#page.high-contrast h1 {
+    color: #ffff66;
+    text-shadow: none;
+}
+
+#page.high-contrast h2,
+#page.high-contrast p {
+    color: white;
+}
+
+#page.high-contrast .reading-options {
+    background: #202020;
+    border: 2px solid #ffff66;
+    box-shadow: none;
+}
+
+#page.high-contrast .js-button,
+#page.high-contrast .nav-button {
+    background: #ffff66;
+    color: black;
+}
+
+#page.high-contrast table {
+    color: white;
+    box-shadow: none;
+}
+
+#page.high-contrast th {
+    background: #303030;
+    color: #ffff66;
+}
+
+#page.high-contrast tr:nth-child(odd) {
+    background: #202020;
+}
+
+#page.high-contrast tr:nth-child(even) {
+    background: #101010;
+}
+
+#page.high-contrast th,
+#page.high-contrast td {
+    border: 1px solid white;
+}
+
+/* GAMER IMAGE */
 
 .gamer-image {
     width: 425px;
@@ -91,13 +215,14 @@ p {
     height: auto;
 
     float: left;
+
     margin: 6px 24px 24px 0;
 
     border: 1px solid dimgray;
     box-shadow: 2px 3px 6px darkgray;
 }
 
-/* VIDEO */
+/* VIDEO SECTION */
 
 .video-section {
     clear: both;
@@ -116,7 +241,7 @@ video {
     box-shadow: 2px 3px 6px dimgray;
 }
 
-/* GAME TABLE */
+/* TABLE SECTION */
 
 .table-section {
     clear: both;
@@ -132,9 +257,11 @@ video {
 table {
     width: 800px;
     max-width: 100%;
+
     margin: 0 auto;
 
     border-collapse: collapse;
+
     font: 12pt/1.4 'Merriweather', serif;
 
     box-shadow: 2px 3px 6px gray;
@@ -142,6 +269,7 @@ table {
 
 th, td {
     border: 1px solid gray;
+
     padding: 12px;
     text-align: left;
 }
@@ -185,6 +313,8 @@ tr:nth-child(odd) {
         line-height: 1.8;
     }
 
+    /* MOBILE NAVIGATION */
+
     .navigation {
         width: 100%;
         margin: 20px auto 30px;
@@ -198,14 +328,35 @@ tr:nth-child(odd) {
         font-size: 12pt;
     }
 
+    /* MOBILE JAVASCRIPT BUTTONS */
+
+    .reading-options {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .js-button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px 10px;
+        font-size: 11pt;
+    }
+
+    /* MOBILE GAMING IMAGE */
+
     .gamer-image {
         float: none;
         display: block;
+
         width: 100%;
         max-width: 100%;
         height: auto;
+
         margin: 20px auto;
     }
+
+    /* MOBILE VIDEO */
 
     .video-section {
         padding-top: 20px;
@@ -216,6 +367,8 @@ tr:nth-child(odd) {
         max-width: 100%;
         height: auto;
     }
+
+    /* MOBILE TABLE */
 
     .table-section {
         padding-top: 30px;
@@ -230,6 +383,7 @@ tr:nth-child(odd) {
     th, td {
         padding: 10px;
     }
+
 }
 
 /* EXTRA SMALL PHONES */
@@ -248,22 +402,24 @@ tr:nth-child(odd) {
     .nav-button {
         font-size: 10pt;
     }
+
 }
 
 </style>
+
 </head>
 
 <body>
 
 <div id="page">
 
-    <!-- TITLE -->
+    <!-- WEBSITE TITLE -->
 
     <h1>The World of Gaming</h1>
 
     <h2>Gaming, Technology, and Creativity</h2>
 
-    <!-- NAVIGATION -->
+    <!-- NAVIGATION BUTTONS -->
 
     <nav class="navigation" aria-label="Main navigation">
 
@@ -289,6 +445,41 @@ tr:nth-child(odd) {
 
     </nav>
 
+    <!-- ASSIGNMENT 12 - READING OPTIONS -->
+
+    <section class="reading-options">
+
+        <h2>Reading Options</h2>
+
+        <p>
+            Customize how you view this gaming website.
+        </p>
+
+        <button
+            type="button"
+            class="js-button"
+            id="textButton"
+            aria-pressed="false">
+            Larger Text
+        </button>
+
+        <button
+            type="button"
+            class="js-button"
+            id="contrastButton"
+            aria-pressed="false">
+            High Contrast
+        </button>
+
+        <button
+            type="button"
+            class="js-button"
+            id="resetButton">
+            Reset View
+        </button>
+
+    </section>
+
     <!-- GAMING IMAGE -->
 
     <img
@@ -312,8 +503,8 @@ tr:nth-child(odd) {
         variety of experiences it can provide. Some games allow
         players to explore huge open worlds, while others focus
         on competition, creativity, strategy, or storytelling.
-        Games can also give players the freedom to build and
-        create their own environments.
+        Games can also give players the freedom to build
+        and create their own environments.
     </p>
 
     <p>
@@ -342,7 +533,9 @@ tr:nth-child(odd) {
 
         <video controls poster="gaming-poster.jpg">
 
-            <source src="gaming-video.mp4" type="video/mp4">
+            <source
+                src="gaming-video.mp4"
+                type="video/mp4">
 
             Your browser does not support the video tag.
 
@@ -361,12 +554,14 @@ tr:nth-child(odd) {
             <table>
 
                 <thead>
+
                     <tr>
                         <th>Game</th>
                         <th>Genre</th>
                         <th>Developer</th>
                         <th>Release Year</th>
                     </tr>
+
                 </thead>
 
                 <tbody>
@@ -395,7 +590,6 @@ tr:nth-child(odd) {
                     <tr>
                         <td>Overwatch</td>
                         <td>Hero Shooter</td>
-
                         <td>Blizzard Entertainment</td>
                         <td>2016</td>
                     </tr>
@@ -416,6 +610,90 @@ tr:nth-child(odd) {
     </section>
 
 </div>
+
+<!-- ASSIGNMENT 12 - JAVASCRIPT -->
+
+<script>
+
+    // Get the page and buttons
+
+    const page = document.getElementById("page");
+
+    const textButton =
+        document.getElementById("textButton");
+
+    const contrastButton =
+        document.getElementById("contrastButton");
+
+    const resetButton =
+        document.getElementById("resetButton");
+
+
+    // BUTTON 1: LARGER TEXT
+
+    textButton.addEventListener("click", function() {
+
+        const isLarge =
+            page.classList.toggle("large-text");
+
+        textButton.setAttribute(
+            "aria-pressed",
+            String(isLarge)
+        );
+
+        if (isLarge) {
+            textButton.textContent = "Normal Text";
+        } else {
+            textButton.textContent = "Larger Text";
+        }
+
+    });
+
+
+    // BUTTON 2: HIGH CONTRAST
+
+    contrastButton.addEventListener("click", function() {
+
+        const isHighContrast =
+            page.classList.toggle("high-contrast");
+
+        contrastButton.setAttribute(
+            "aria-pressed",
+            String(isHighContrast)
+        );
+
+        if (isHighContrast) {
+            contrastButton.textContent = "Normal Contrast";
+        } else {
+            contrastButton.textContent = "High Contrast";
+        }
+
+    });
+
+
+    // BUTTON 3: RESET VIEW
+
+    resetButton.addEventListener("click", function() {
+
+        page.classList.remove("large-text");
+
+        page.classList.remove("high-contrast");
+
+        textButton.textContent = "Larger Text";
+
+        contrastButton.textContent = "High Contrast";
+
+        textButton.setAttribute(
+            "aria-pressed", "false"
+        );
+
+        contrastButton.setAttribute(
+            "aria-pressed", "false"
+        );
+
+    });
+
+</script>
 
 </body>
 </html>
